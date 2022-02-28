@@ -66,7 +66,7 @@ elyra-metadata install runtimes \
 In the Jupyter Lab UI we can view our new runtime configuration.
 
 ![Jupyter Lab UI](/images/jupyter-lab-ui-kfp.png)
-{{< figure src="/images/jupyter-lab-ui-kfp.png" title="Jupyter Lab UI" >}}
+<!-- {{< figure src="/images/jupyter-lab-ui-kfp.png" title="Jupyter Lab UI" >}} -->
 
 I was then able to run the [example generic pipeline](https://github.com/elyra-ai/examples/tree/master/pipelines/introduction-to-generic-pipelines) on my new Kubeflow Pipelines runetime! For more details on this see [Verify Runtime Config](https://elyra.readthedocs.io/en/latest/user_guide/runtime-conf.html#verifying-runtime-configurations).
 ## Shutdown Minikube
