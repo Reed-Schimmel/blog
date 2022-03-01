@@ -1,4 +1,4 @@
 baseURL = 'https://reed-schimmel.github.io/blog/'
 languageCode = 'en-us'
-title = 'Hackerman's Blog'
+title = "Hackerman's Blog"
 theme = "ananke"
