@@ -1,7 +1,7 @@
 ---
 title: Install Kubeflow Pipelines for Elyra on Linux + Minikube.
 date: 2022-02-23T10:01:18.000Z
-draft: true
+draft: false
 slug: install-kubeflow-pipelines-elyra-linux-minikube
 ---
 In my quest to find the perfect MLOps workflow to accelerate my financial ML research, I played around with [Elyra](https://elyra.readthedocs.io/en/latest/getting_started/overview.html). It's a set of plugins for Jupyter Notebooks that allows you to visually drag and drop a (Python) pipeline.
