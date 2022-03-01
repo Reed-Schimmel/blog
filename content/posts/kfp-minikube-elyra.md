@@ -6,7 +6,7 @@ slug: install-kubeflow-pipelines-elyra-linux-minikube
 ---
 In my quest to find the perfect MLOps workflow to accelerate my financial ML research, I played around with [Elyra](https://elyra.readthedocs.io/en/latest/getting_started/overview.html). It's a set of plugins for Jupyter Notebooks that allows you to visually drag and drop a (Python) pipeline.
 
-To use the Kubeflow pipelines feature I needed to install Kubeflow Pipelines on my local machine. The [Elyra documentation](https://elyra.readthedocs.io/en/latest/recipes/deploying-kubeflow-locally-for-dev.html) on this uses Docker Desktop for MacOS or Windows. As my machine is running [Pop!_OS](https://pop.system76.com/) 21.04 and I already had Minikube installed from installing MLRun (Article coming soon), I adapted the [Elyra Kubeflow Pipelines Guide](https://elyra.readthedocs.io/en/latest/recipes/deploying-kubeflow-locally-for-dev.html) to use Minikube.
+To use the Kubeflow pipelines feature I needed to install Kubeflow Pipelines on my local machine. The [Elyra documentation](https://elyra.readthedocs.io/en/latest/recipes/deploying-kubeflow-locally-for-dev.html) on this uses Docker Desktop for MacOS or Windows. As my machine is running [Pop!_OS](https://pop.system76.com/) 21.04 and I already had Minikube installed from installing MLRun, I adapted the [Elyra Kubeflow Pipelines Guide](https://elyra.readthedocs.io/en/latest/recipes/deploying-kubeflow-locally-for-dev.html) to use Minikube.
 
 **Prerequisites:**
 1. [Install Minikube](https://minikube.sigs.k8s.io/docs/start/)
@@ -66,7 +66,6 @@ elyra-metadata install runtimes \
 In the Jupyter Lab UI we can view our new runtime configuration.
 
 ![Jupyter Lab UI](/images/jupyter-lab-ui-kfp.png)
-<!-- {{< figure src="/images/jupyter-lab-ui-kfp.png" title="Jupyter Lab UI" >}} -->
 
 I was then able to run the [example generic pipeline](https://github.com/elyra-ai/examples/tree/master/pipelines/introduction-to-generic-pipelines) on my new Kubeflow Pipelines runetime! For more details on this see [Verify Runtime Config](https://elyra.readthedocs.io/en/latest/user_guide/runtime-conf.html#verifying-runtime-configurations).
 ## Shutdown Minikube
