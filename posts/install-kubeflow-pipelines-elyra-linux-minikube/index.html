@@ -5,7 +5,7 @@
 <title>Install Kubeflow Pipelines for Elyra on Linux + Minikube. | Hackerman's Blog</title><meta name=viewport content="width=device-width,minimum-scale=1">
 <meta name=description content="In my quest to find the perfect MLOps workflow to accelerate my financial ML research, I played around with Elyra. It&rsquo;s a set of plugins for Jupyter Notebooks that allows you to visually drag and drop a (Python) pipeline.
 To use the Kubeflow pipelines feature I needed to install Kubeflow Pipelines on my local machine. The Elyra documentation on this uses Docker Desktop for MacOS or Windows. As my machine is running Pop!">
-<meta name=generator content="Hugo 0.93.0">
+<meta name=generator content="Hugo 0.93.1">
 <meta name=robots content="noindex, nofollow">
 <link rel=stylesheet href=/blog/ananke/css/main.min.css>
 <meta property="og:title" content="Install Kubeflow Pipelines for Elyra on Linux + Minikube.">
@@ -20,7 +20,7 @@ To use the Kubeflow pipelines feature I needed to install Kubeflow Pipelines on 
 To use the Kubeflow pipelines feature I needed to install Kubeflow Pipelines on my local machine. The Elyra documentation on this uses Docker Desktop for MacOS or Windows. As my machine is running Pop!"><meta itemprop=datePublished content="2022-02-23T10:01:18+00:00">
 <meta itemprop=dateModified content="2022-02-23T10:01:18+00:00">
 <meta itemprop=wordCount content="419">
-<meta itemprop=keywords content><meta name=twitter:card content="summary">
+<meta itemprop=keywords content="Elyra,"><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Install Kubeflow Pipelines for Elyra on Linux + Minikube.">
 <meta name=twitter:description content="In my quest to find the perfect MLOps workflow to accelerate my financial ML research, I played around with Elyra. It&rsquo;s a set of plugins for Jupyter Notebooks that allows you to visually drag and drop a (Python) pipeline.
 To use the Kubeflow pipelines feature I needed to install Kubeflow Pipelines on my local machine. The Elyra documentation on this uses Docker Desktop for MacOS or Windows. As my machine is running Pop!">
@@ -40,11 +40,15 @@ Hackerman's Blog
 <aside class="instapaper_ignoref b helvetica tracked">
 POSTS
 </aside><div id=sharing class="mt3 ananke-socials">
-</div><h1 class="f1 athelas mt3 mb1">Install Kubeflow Pipelines for Elyra on Linux + Minikube.</h1><time class="f6 mv4 dib tracked" datetime=2022-02-23T10:01:18Z>February 23, 2022</time>
+</div><h1 class="f1 athelas mt3 mb1">Install Kubeflow Pipelines for Elyra on Linux + Minikube.</h1><p class=tracked>
+By <strong>
+Reed Schimmel
+</strong>
+</p><time class="f6 mv4 dib tracked" datetime=2022-02-23T10:01:18Z>February 23, 2022</time>
 </header><div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>In my quest to find the perfect MLOps workflow to accelerate my financial ML research, I played around with <a href=https://elyra.readthedocs.io/en/latest/getting_started/overview.html>Elyra</a>. It&rsquo;s a set of plugins for Jupyter Notebooks that allows you to visually drag and drop a (Python) pipeline.</p><p>To use the Kubeflow pipelines feature I needed to install Kubeflow Pipelines on my local machine. The <a href=https://elyra.readthedocs.io/en/latest/recipes/deploying-kubeflow-locally-for-dev.html>Elyra documentation</a> on this uses Docker Desktop for MacOS or Windows. As my machine is running <a href=https://pop.system76.com/>Pop!_OS</a> 21.04 and I already had Minikube installed from installing MLRun, I adapted the <a href=https://elyra.readthedocs.io/en/latest/recipes/deploying-kubeflow-locally-for-dev.html>Elyra Kubeflow Pipelines Guide</a> to use Minikube.</p><p><strong>Prerequisites:</strong></p><ol>
-<li><a href=https://minikube.sigs.k8s.io/docs/start/>Install Minikube</a></li><li><a href=https://elyra.readthedocs.io/en/latest/getting_started/installation.html>Install Elyra</a></li></ol><h2 id=start-minikube>Start Minikube</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>minikube start --vm-driver<span style=color:#f92672>=</span>docker --cpus<span style=color:#f92672>=</span><span style=color:#ae81ff>6</span> --memory<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;24g&#39;</span> --kubernetes-version<span style=color:#f92672>=</span>v1.16.8
-</span></span></code></pre></div><p>The Elyra guide states that the <strong>minimium hardware requirements are 4 CPUs and 8GB of RAM</strong>.
-My system has 6c/12t and 64GB of RAM, so adjust the values in the command below to match your system.</p><h2 id=install-kubeflow-pipelines>Install KubeFlow Pipelines</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Shell data-lang=Shell><span style=display:flex><span>export PIPELINE_VERSION<span style=color:#f92672>=</span>1.4.0
+<li><a href=https://minikube.sigs.k8s.io/docs/start/>Install Minikube</a></li><li><a href=https://elyra.readthedocs.io/en/latest/getting_started/installation.html>Install Elyra</a></li></ol><h2 id=start-minikube>Start Minikube</h2><p>The Elyra guide states that the <strong>minimium hardware requirements are 4 CPUs and 8GB of RAM</strong>.
+My system has 6c/12t and 64GB of RAM, so adjust the values in the command below to match your system.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>minikube start --vm-driver<span style=color:#f92672>=</span>docker --cpus<span style=color:#f92672>=</span><span style=color:#ae81ff>6</span> --memory<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;24g&#39;</span> --kubernetes-version<span style=color:#f92672>=</span>v1.16.8
+</span></span></code></pre></div><h2 id=install-kubeflow-pipelines>Install KubeFlow Pipelines</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Shell data-lang=Shell><span style=display:flex><span>export PIPELINE_VERSION<span style=color:#f92672>=</span>1.4.0
 </span></span><span style=display:flex><span>minikube kubectl -- apply -k <span style=color:#e6db74>&#34;github.com/kubeflow/pipelines/manifests/kustomize/cluster-scoped-resources?ref=</span>$PIPELINE_VERSION<span style=color:#e6db74>&#34;</span>
 </span></span><span style=display:flex><span>minikube kubectl -- wait --for condition<span style=color:#f92672>=</span>established --timeout<span style=color:#f92672>=</span>60s crd/applications.app.k8s.io
 </span></span><span style=display:flex><span>minikube kubectl -- apply -k <span style=color:#e6db74>&#34;github.com/elyra-ai/elyra/etc/kubernetes/kubeflow-pipelines?ref=master&#34;</span>
@@ -70,7 +74,9 @@ The code below will add your local Kubeflow Pipelines instance to Elyra.</p><div
 </span></span></code></pre></div><p>In the Jupyter Lab UI we can view our new runtime configuration.</p><p><img src=/images/jupyter-lab-ui-kfp.png alt="Jupyter Lab UI"></p><p>I was then able to run the <a href=https://github.com/elyra-ai/examples/tree/master/pipelines/introduction-to-generic-pipelines>example generic pipeline</a> on my new Kubeflow Pipelines runetime! For more details on this see <a href=https://elyra.readthedocs.io/en/latest/user_guide/runtime-conf.html#verifying-runtime-configurations>Verify Runtime Config</a>.</p><h2 id=shutdown-minikube>Shutdown Minikube</h2><p>When you are done with your work and wish to shutdown the service run the following:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>minikube stop
 </span></span></code></pre></div><hr>
 <p>Disclaimer: I wrote this in Dec 2021 and published it Feb 2022. Some of this information may be outdated. If you would like to alert me to errors or other problems, please email me at <a href=mailto:blogfeedback.1kzbq@simplelogin.co>blogfeedback.1kzbq@simplelogin.co</a></p><ul class=pa0>
-</ul><div class="mt6 instapaper_ignoref">
+<li class="list di">
+<a href=/blog/tags/elyra class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Elyra</a>
+</li></ul><div class="mt6 instapaper_ignoref">
 </div></div><aside class="w-30-l mt6-l">
 </aside></article></main><footer class="bg-black bottom-0 w-100 pa3" role=contentinfo>
 <div class="flex justify-between">
