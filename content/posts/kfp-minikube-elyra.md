@@ -3,7 +3,15 @@ title: Install Kubeflow Pipelines for Elyra on Linux + Minikube.
 date: 2022-02-23T10:01:18.000Z
 draft: false
 slug: install-kubeflow-pipelines-elyra-linux-minikube
+github_link: "https://github.com/Reed-Schimmel/reeds-homepage"
+author: "Reed Schimmel"
+tags:
+  - Elyra
+bg_image: ""
+description: ""
+toc: 
 ---
+
 In my quest to find the perfect MLOps workflow to accelerate my financial ML research, I played around with [Elyra](https://elyra.readthedocs.io/en/latest/getting_started/overview.html). It's a set of plugins for Jupyter Notebooks that allows you to visually drag and drop a (Python) pipeline.
 
 To use the Kubeflow pipelines feature I needed to install Kubeflow Pipelines on my local machine. The [Elyra documentation](https://elyra.readthedocs.io/en/latest/recipes/deploying-kubeflow-locally-for-dev.html) on this uses Docker Desktop for MacOS or Windows. As my machine is running [Pop!_OS](https://pop.system76.com/) 21.04 and I already had Minikube installed from installing MLRun, I adapted the [Elyra Kubeflow Pipelines Guide](https://elyra.readthedocs.io/en/latest/recipes/deploying-kubeflow-locally-for-dev.html) to use Minikube.
@@ -13,11 +21,11 @@ To use the Kubeflow pipelines feature I needed to install Kubeflow Pipelines on 
 2. [Install Elyra](https://elyra.readthedocs.io/en/latest/getting_started/installation.html)
 
 ## Start Minikube
+The Elyra guide states that the **minimium hardware requirements are 4 CPUs and 8GB of RAM**.
+My system has 6c/12t and 64GB of RAM, so adjust the values in the command below to match your system.
 ``` shell
 minikube start --vm-driver=docker --cpus=6 --memory='24g' --kubernetes-version=v1.16.8
 ```
-The Elyra guide states that the **minimium hardware requirements are 4 CPUs and 8GB of RAM**.
-My system has 6c/12t and 64GB of RAM, so adjust the values in the command below to match your system.
 ## Install KubeFlow Pipelines
 ``` Shell
 export PIPELINE_VERSION=1.4.0
