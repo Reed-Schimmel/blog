@@ -16,7 +16,7 @@ I will post guides of my projects, covering topics such as:
 
 # Branding
 
-This is a fantastic choice. **ReedWriteExec** (rwx) is a powerful "shibboleth"—a term that acts as a secret handshake for the people you actually want to work with. It tells every Senior Engineer and Hiring Manager that you live in the terminal.
+**ReedWriteExec** (rwx) is a powerful "shibboleth"—a term that acts as a secret handshake for the people you actually want to work with. It tells every Senior Engineer and Hiring Manager that you live in the terminal.
 
 Here is a comprehensive branding package for **ReedWriteExec.com**.
 
@@ -83,12 +83,3 @@ Instead of "© 2026 Reed," use:
 * Instead of "Projects," use `/usr/bin/outputs`
 * Instead of "Contact," use `ssh reed@reedwriteexec.com`
 
-
-
----
-
-### Why this kills the "ReedTard" risk:
-
-This brand is **cleverer**. It shows you have a deep, fundamental understanding of how operating systems work. It keeps your name ("Reed") front and center but wraps it in a layer of high-level technical competence. It's the difference between a "junior dev joke" and a "senior engineer signature."
-
-**Would you like me to write a "Hello World" first blog post for ReedWriteExec that explains the permission-based philosophy of your new brand?**

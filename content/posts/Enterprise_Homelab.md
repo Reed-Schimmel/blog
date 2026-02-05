@@ -1,4 +1,5 @@
-title: Bringing Work Home: Replicating Enterprise DevOps in a Homelab
+---
+title: "Bringing Work Home: Replicating Enterprise DevOps in a Homelab"
 date: 2024-07-01T10:01:18.000Z
 draft: false
 slug: bringing-work-home-replicating-enterprise-devops-in-a-homelab
