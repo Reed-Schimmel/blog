@@ -1,4 +1,5 @@
-title: Building the Foundation: Terraform, Proxmox, and Talos
+---
+title: "Building the Foundation: Terraform, Proxmox, and Talos"
 date: 2024-06-29T10:01:18.000Z
 draft: false
 slug: install-kubeflow-pipelines-elyra-linux-minikube
