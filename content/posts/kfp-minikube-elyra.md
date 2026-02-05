@@ -9,7 +9,8 @@ tags:
   - Elyra
 bg_image: ""
 description: ""
-toc: 
+toc:
+# Copyright (c) 2026 Reed Schimmel. All Rights Reserved.
 ---
 
 In my quest to find the perfect MLOps workflow to accelerate my financial ML research, I played around with [Elyra](https://elyra.readthedocs.io/en/latest/getting_started/overview.html). It's a set of plugins for Jupyter Notebooks that allows you to visually drag and drop a (Python) pipeline.

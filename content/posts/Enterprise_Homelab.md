@@ -12,7 +12,8 @@ tags:
   - Kubernetes
 bg_image: ""
 description: ""
-toc: 
+toc:
+# Copyright (c) 2026 Reed Schimmel. All Rights Reserved.
 ---
 
 # Bringing Work Home: Replicating Enterprise DevOps in a Homelab
