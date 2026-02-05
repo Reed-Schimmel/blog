@@ -16,9 +16,7 @@ toc:
 # Copyright (c) 2026 Reed Schimmel. All Rights Reserved.
 ---
 
-# Bringing Work Home: Replicating Enterprise DevOps in a Homelab
-
-This project began as a way for me to master the technology stack used by the Cloud DevOps team at Actian. Entering a team of seasoned engineers who had been building on the cloud for a decade was intimidating. I was trying to understand how code from dozens of repositories interacted while simultaneously learning the underlying technologies from scratch.
+[This project](https://github.com/Reed-Schimmel/homelab/tree/main) began as a way for me to master the technology stack used by the Cloud DevOps team at Actian. Entering a team of seasoned engineers who had been building on the cloud for a decade was intimidating. I was trying to understand how code from dozens of repositories interacted while simultaneously learning the underlying technologies from scratch.
 
 My solution? Build a miniature version at home.
 
@@ -50,8 +48,12 @@ When I joined, the team was already using **ArgoCD** for Kubernetes application 
 My initial vision included self-hosting **Gitea** to replace Bitbucket, achieving total self-reliance. However, this introduced a "chicken and egg" problem: hosting the code that builds the infrastructure *on* the infrastructure itself is risky during the bootstrap phase. To ensure my Infrastructure-as-Code (IaC) remained accessible even if the lab went down, I decided to stick with **GitHub** as the external source of truth.
 
 ## A Career Portfolio
-Now, two years later, I am polishing up this repository to share with the community. This blog series documents the journey of building this platform—from the initial Terraform struggles to a fully functioning GitOps environment. It serves as both a tutorial for others and a portfolio of the skills I sharpened during those late-night debugging sessions.
+Now, two years later, I am polishing up [this repository](https://github.com/Reed-Schimmel/homelab/tree/main) to share with the community. This blog series documents the journey of building this platform—from the initial Terraform struggles to a fully functioning GitOps environment. It serves as both a tutorial for others and a portfolio of the skills I sharpened during those late-night debugging sessions.
 
+---
+
+- Next Article: [Homelab Tech Details](/posts/Terraform_Proxmox_Talos.md)
+- [Project Source Code](https://github.com/Reed-Schimmel/homelab/tree/main)
 
 ---
 

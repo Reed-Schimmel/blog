@@ -2,3 +2,9 @@ baseURL = 'https://reed-schimmel.github.io/blog/'
 languageCode = 'en-us'
 title = "ReedWriteExec"
 theme = "ananke"
+
+[markup.goldmark.renderHooks.image]
+enableDefault = true
+
+[markup.goldmark.renderHooks.link]
+enableDefault = true

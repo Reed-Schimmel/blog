@@ -16,9 +16,9 @@ toc:
 # Copyright (c) 2026 Reed Schimmel. All Rights Reserved.
 ---
 
-# Building the Foundation: Terraform, Proxmox, and Talos
+- [Project Source Code](https://github.com/Reed-Schimmel/homelab/tree/main)
 
-In the previous post, I outlined the goal: a homelab that mirrors enterprise DevOps. Now, let's start building it. We'll begin by setting up the Terraform providers and downloading the Talos Linux ISO.
+In the [previous post](/posts/Enterprise_Homelab.md), I outlined the goal: a homelab that mirrors enterprise DevOps. Now, let's start building it. We'll begin by setting up the Terraform providers and downloading the Talos Linux ISO.
 
 At work I provision k8s clusters on the big cloud providers using terraform. I want to replicate this workflow in my homelab. Many homelab educators use ansible to install k3s on ubuntu vms. So here is my attempt to do the kubernetes homelab with terraform, proxmox and talos, no Ansible.
 
@@ -130,6 +130,10 @@ Since figuring out the exact HCL configuration for a VM can be tricky, we'll sta
     Mine looks like `terraform import proxmox_vm_qemu.talos-proxmox-vm pve01/qemu/100` because my node's name is "pve01" and the VMID of the talos VM is 100.
 
 Now we have the state for that resource in our `terraform.tfstate`. In the next post, we will use this state to define our actual `main.tf` configuration and launch the full cluster.
+
+---
+
+- [Project Source Code](https://github.com/Reed-Schimmel/homelab/tree/main)
 
 ---
 
