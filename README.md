@@ -4,6 +4,8 @@ I will post guides of my projects, covering topics such as:
 - Algorithmic Trading.
 - Self hosting & FOSS alternatives to big-tech products.
 
+- [GitHub Repo](https://github.com/Reed-Schimmel/blog/tree/main)
+
 ## Hugo
 - [Hugo Homepage](https://gohugo.io/)
 
