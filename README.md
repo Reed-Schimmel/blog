@@ -83,3 +83,9 @@ Instead of "© 2026 Reed," use:
 * Instead of "Projects," use `/usr/bin/outputs`
 * Instead of "Contact," use `ssh reed@reedwriteexec.com`
 
+
+## License & Copyright
+
+**Code:** The code and Hugo configuration in this repository are available under the [MIT License](LICENSE).
+
+**Content:** The blog posts, articles, and personal photos are **Copyright © 2026 Reed Schimmel**. They may not be reproduced, distributed, or transmitted in any form without prior written permission.
