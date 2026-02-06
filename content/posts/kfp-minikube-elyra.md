@@ -3,7 +3,7 @@ title: Install Kubeflow Pipelines for Elyra on Linux + Minikube.
 date: 2022-02-23T10:01:18.000Z
 draft: false
 slug: install-kubeflow-pipelines-elyra-linux-minikube
-github_link: "https://github.com/Reed-Schimmel/reeds-homepage"
+github_link: "https://github.com/Reed-Schimmel/blog"
 author: "Reed Schimmel"
 tags:
   - Elyra

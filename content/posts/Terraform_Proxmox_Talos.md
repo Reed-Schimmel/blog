@@ -2,8 +2,8 @@
 title: "Building the Foundation: Terraform, Proxmox, and Talos"
 date: 2024-06-29T10:01:18.000Z
 draft: false
-slug: install-kubeflow-pipelines-elyra-linux-minikube
-github_link: "https://github.com/Reed-Schimmel/reeds-homepage"
+slug: building-foundation-terraform-proxmox-talos
+github_link: "https://github.com/Reed-Schimmel/blog"
 author: "Reed Schimmel"
 tags:
   - Terraform

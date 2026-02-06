@@ -3,7 +3,7 @@ title: "Bringing Work Home: Replicating Enterprise DevOps in a Homelab"
 date: 2024-07-01T10:01:18.000Z
 draft: false
 slug: bringing-work-home-replicating-enterprise-devops-in-a-homelab
-github_link: "https://github.com/Reed-Schimmel/reeds-homepage"
+github_link: "https://github.com/Reed-Schimmel/blog"
 author: "Reed Schimmel"
 tags:
   - Terraform
