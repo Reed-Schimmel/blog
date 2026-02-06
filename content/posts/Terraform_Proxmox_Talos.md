@@ -16,7 +16,7 @@ toc:
 # Copyright (c) 2026 Reed Schimmel. All Rights Reserved.
 ---
 
-- [Project Source Code](https://github.com/Reed-Schimmel/homelab/tree/main)
+- [Project Source Code](https://github.com/Reed-Schimmel/pve-k8s-iac-homelab/tree/main)
 
 In the [previous post](/posts/Enterprise_Homelab.md), I outlined the goal: a homelab that mirrors enterprise DevOps. Now, let's start building it. We'll begin by setting up the Terraform providers and downloading the Talos Linux ISO.
 
@@ -133,7 +133,7 @@ Now we have the state for that resource in our `terraform.tfstate`. In the next 
 
 ---
 
-- [Project Source Code](https://github.com/Reed-Schimmel/homelab/tree/main)
+- [Project Source Code](https://github.com/Reed-Schimmel/pve-k8s-iac-homelab/tree/main)
 
 ---
 
